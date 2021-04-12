@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade">
+	<name>plg_system_programming_task</name>
+	<author>Mahmoud Ahmed</author>
+	<creationDate>April 2021</creationDate>
+	<copyright>(C) 2021 Open Source Matters, Inc.</copyright>
+	<authorEmail>mahmoud_Ahmed@stud.fci-cu.edu.eg</authorEmail>
+	<authorUrl>www.mahmoud-ahmed.me</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_PROGRAMING_TASK_DESCRIPTION</description>
+	<media folder="media" destination="plg_system_programming_task">
+        <folder>js</folder>
+        <folder>css</folder>
+    </media>
+	<files>
+		<filename plugin="programmingtask">programmingtask.php</filename>
+	</files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_programmingtask.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_programmingtask.sys.ini</language>
+    </languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+                    name="cookie_name"
+                    type="text"
+                    label="PLG_SYSTEM_PROGRAMING_TASK_COOKIE_NAME_LABEL"
+                    default="is_visited_before"
+                    required="true"
+                    filter="string"
+                    size="32"
+                />
+
+                <field
+                    name="cookie_lifetime"
+                    type="number"
+                    label="PLG_SYSTEM_PROGRAMING_TASK_COOKIE_LIFETIME_LABEL"
+                    default="60"
+                    filter="integer"
+                    required="true"
+                />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

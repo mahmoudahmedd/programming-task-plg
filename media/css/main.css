@@ -1,0 +1,72 @@
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2147483645;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #F1F6F4;
+}
+
+.cookie-banner-inner {     
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.cookie-banner-copy { 
+  margin-bottom: 16px;
+}
+
+.cookie-banner-actions {    
+}
+
+.cookie-banner-header {
+  margin-bottom: 8px;
+  
+  font-family: "CeraPRO-Bold", sans-serif, arial;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.cookie-banner-description {
+  font-family: "CeraPRO-Regular", sans-serif, arial;
+  font-weight: normal;
+  color: #838F93;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.cookie-banner-cta {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  padding: 11px 13px;
+  border-radius: 2px;
+  background-color: #2CE080;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  font-family: "CeraPRO-Regular", sans-serif, arial;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.cookie-banner-cta--secondary { 
+  padding: 9px 13px;
+  border: 2px solid #3A4649;
+  background-color: transparent;
+  color: #2CE080;
+}
+
+.cookie-banner-cta:hover {
+  background-color: #20BA68;
+}
+
+.cookie-banner-cta--secondary:hover {
+  border-color: #838F93; 
+  background-color: transparent;
+  color: #22C870;
+}
